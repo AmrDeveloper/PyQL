@@ -1,0 +1,18 @@
+[package]
+name = "pyql"
+authors = ["AmrDeveloper"]
+version = "0.1.0"
+edition = "2021"
+description = "A tool to run SQL-like query on your Python source code files"
+license = "MIT"
+repository = "https://github.com/amrdeveloper/pyql/"
+documentation = "https://github.com/amrdeveloper/pyql"
+readme = "README.md"
+keywords = ["python code", "pyql", "language", "gitql", "llvm"]
+categories = ["command-line-utilities"]
+exclude = [".github/**", "docs/**", "media/**", "scripts/**"]
+
+[dependencies]
+
+[profile.release]
+lto = true
