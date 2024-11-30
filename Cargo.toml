@@ -8,11 +8,19 @@ license = "MIT"
 repository = "https://github.com/amrdeveloper/pyql/"
 documentation = "https://github.com/amrdeveloper/pyql"
 readme = "README.md"
-keywords = ["python code", "pyql", "language", "gitql", "llvm"]
+keywords = ["python", "pyql", "language", "gitql", "llvm"]
 categories = ["command-line-utilities"]
 exclude = [".github/**", "docs/**", "media/**", "scripts/**"]
 
 [dependencies]
+gitql-core = "0.9.0"
+gitql-std = "0.9.0"
+gitql-ast = "0.29.0"
+gitql-parser = "0.31.0"
+gitql-engine = "0.32.0"
+gitql-cli = "0.32.0"
+lineeditor = "0.4.1"
+rustpython-parser = "0.4.0"
 
 [profile.release]
 lto = true
