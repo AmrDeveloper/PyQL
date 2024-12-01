@@ -244,7 +244,7 @@ impl Highlighter for MatchingBracketsHighlighter {
 }
 
 pub fn create_new_line_editor() -> LineEditor {
-    let prompt = StringPrompt::new("llql > ".to_string());
+    let prompt = StringPrompt::new("PyQL > ".to_string());
     let mut line_editor = LineEditor::new(Box::new(prompt));
 
     let mut style = Style::default();
