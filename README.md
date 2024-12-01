@@ -29,7 +29,7 @@ PyQL is a SQL like query language to run on Python source code files instead of 
 | --------------- | ---------- | ---------------------------------------- |
 | function_name   | Text       | The name of Python function              |
 | arguments_count | Integer    | The number of arguments in this function |
-| function        | PyFunction | A pointer to that Function Node in AST   |
+| functions       | PyFunction | A pointer to that Function Node in AST   |
 | file_name       | Text       | File name that has this function         |
 
 
