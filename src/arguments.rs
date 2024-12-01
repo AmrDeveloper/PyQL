@@ -86,7 +86,7 @@ pub fn parse_arguments(args: &[String]) -> Command {
                 }
 
                 if arguments.files.is_empty() {
-                    return Command::Error("Must provide one or more C/C++ files".to_string());
+                    return Command::Error("Must provide one or more Python files".to_string());
                 }
             }
             "--query" | "-q" => {
@@ -162,7 +162,7 @@ pub fn parse_arguments(args: &[String]) -> Command {
     }
 
     if arguments.files.is_empty() {
-        return Command::Error("Must provide one or more LLVM IR or BC files".to_string());
+        return Command::Error("Must provide one or more Python files".to_string());
     }
 
     if let Some(script_file) = optional_script_file {
